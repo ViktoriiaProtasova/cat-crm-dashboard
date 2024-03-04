@@ -1,4 +1,3 @@
-// Commect styles
 import '../scss/main.scss';
 
 import * as bodyScrollLock from 'body-scroll-lock';
