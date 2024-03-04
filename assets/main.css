@@ -129,6 +129,13 @@ summary {
   grid-template-areas: "welcome" "co-workers" "tasks" "reports";
 }
 
+.companies-main {
+  display: grid;
+  gap: 40px;
+  padding: 16px;
+  grid-template-areas: "welcome" "companies";
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -144,11 +151,11 @@ summary {
   padding: 8px 12px;
   color: #fafafb;
   border-radius: 12px;
-  -webkit-transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, -webkit-box-shadow;
-  -moz-transition-property: background-color, color, box-shadow;
-  transition-property: background-color, color, box-shadow;
-  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
+  -webkit-transition: background-color, color, -webkit-box-shadow;
+  transition: background-color, color, -webkit-box-shadow;
+  -moz-transition: background-color, color, box-shadow;
+  transition: background-color, color, box-shadow;
+  transition: background-color, color, box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 300ms;
      -moz-transition-duration: 300ms;
           transition-duration: 300ms;
@@ -339,9 +346,9 @@ summary {
   -webkit-transition: 600ms ease;
   -moz-transition: 600ms ease;
   transition: 600ms ease;
-  -webkit-transition-property: margin;
-  -moz-transition-property: margin;
-  transition-property: margin;
+  -webkit-transition: margin;
+  -moz-transition: margin;
+  transition: margin;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -382,9 +389,9 @@ summary {
   -webkit-transition: 300ms ease;
   -moz-transition: 300ms ease;
   transition: 300ms ease;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  transition-property: opacity;
+  -webkit-transition: opacity;
+  -moz-transition: opacity;
+  transition: opacity;
   -webkit-transition-delay: 150ms;
      -moz-transition-delay: 150ms;
           transition-delay: 150ms;
@@ -398,9 +405,9 @@ summary {
   -webkit-transition: 300ms ease;
   -moz-transition: 300ms ease;
   transition: 300ms ease;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  transition-property: opacity;
+  -webkit-transition: opacity;
+  -moz-transition: opacity;
+  transition: opacity;
   -webkit-transition-delay: 150ms;
      -moz-transition-delay: 150ms;
           transition-delay: 150ms;
@@ -721,9 +728,9 @@ summary {
   -webkit-transition: 300ms ease;
   -moz-transition: 300ms ease;
   transition: 300ms ease;
-  -webkit-transition-property: fill, background-color, border-color;
-  -moz-transition-property: fill, background-color, border-color;
-  transition-property: fill, background-color, border-color;
+  -webkit-transition: fill, background-color, border-color;
+  -moz-transition: fill, background-color, border-color;
+  transition: fill, background-color, border-color;
   fill: transparent;
   border: 1px solid;
   border-color: #92929d;
@@ -759,9 +766,9 @@ summary {
   -webkit-transition: 300ms ease;
   -moz-transition: 300ms ease;
   transition: 300ms ease;
-  -webkit-transition-property: outline;
-  -moz-transition-property: outline;
-  transition-property: outline;
+  -webkit-transition: outline;
+  -moz-transition: outline;
+  transition: outline;
   width: 20px;
   height: 20px;
   color: #92929d;
@@ -926,6 +933,69 @@ summary {
   opacity: 1;
 }
 
+.companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.board-left {
+  width: 100%;
+}
+
+.board-companies {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  margin-bottom: 8px;
+}
+.board-companies .board-caption {
+  margin: 0;
+}
+.board-companies .board-tag {
+  fill: #fff;
+}
+
+.board-geo-tag {
+  fill: #82c43c;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.discover-caption {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  min-width: 89px;
+  height: 36px;
+  padding: 8px 12px;
+  color: #f07f2e;
+  border: 1px solid #f07f2e;
+  border-radius: 12px;
+}
+
 .menu {
   position: relative;
   width: 100%;
@@ -942,9 +1012,9 @@ summary {
   -webkit-transition: 300ms ease;
   -moz-transition: 300ms ease;
   transition: 300ms ease;
-  -webkit-transition-property: color;
-  -moz-transition-property: color;
-  transition-property: color;
+  -webkit-transition: color;
+  -moz-transition: color;
+  transition: color;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1021,11 +1091,11 @@ summary {
   -webkit-transition: 600ms ease;
   -moz-transition: 600ms ease;
   transition: 600ms ease;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  -moz-transition-property: opacity, transform, -moz-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform, -moz-transform;
+  -webkit-transition: opacity, -webkit-transform;
+  transition: opacity, -webkit-transform;
+  -moz-transition: opacity, transform, -moz-transform;
+  transition: opacity, transform;
+  transition: opacity, transform, -webkit-transform, -moz-transform;
   -webkit-transition-delay: 800ms, 600ms;
      -moz-transition-delay: 800ms, 600ms;
           transition-delay: 800ms, 600ms;
@@ -1102,9 +1172,9 @@ summary {
   -webkit-transition: 300ms ease;
   -moz-transition: 300ms ease;
   transition: 300ms ease;
-  -webkit-transition-property: width, color;
-  -moz-transition-property: width, color;
-  transition-property: width, color;
+  -webkit-transition: width, color;
+  -moz-transition: width, color;
+  transition: width, color;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -moz-inline-box;
@@ -1166,6 +1236,10 @@ summary {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "welcome welcome" "co-workers co-workers" "tasks reports";
   }
+  .companies-main {
+    gap: 36px;
+    padding: 36px;
+  }
   .co-workers-details {
     display: none;
   }
@@ -1199,6 +1273,9 @@ summary {
     grid-area: main;
     grid-template-columns: repeat(auto-fit, minmax(455px, 629px));
     grid-template-areas: "welcome welcome" "co-workers tasks" "co-workers reports";
+  }
+  .companies-main {
+    grid-area: main;
   }
   .page-title-accent {
     margin-bottom: 16px;
@@ -1271,11 +1348,11 @@ summary {
     -webkit-transition: 300ms ease;
     -moz-transition: 300ms ease;
     transition: 300ms ease;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -moz-transition-property: transform, -moz-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform, -moz-transform;
+    -webkit-transition: -webkit-transform;
+    transition: -webkit-transform;
+    -moz-transition: transform, -moz-transform;
+    transition: transform;
+    transition: transform, -webkit-transform, -moz-transform;
     max-width: 248px;
     -webkit-transform: translateX(-100%);
        -moz-transform: translateX(-100%);
@@ -1301,9 +1378,9 @@ summary {
     -webkit-transition: 300ms ease;
     -moz-transition: 300ms ease;
     transition: 300ms ease;
-    -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    transition-property: opacity;
+    -webkit-transition: opacity;
+    -moz-transition: opacity;
+    transition: opacity;
     opacity: 0;
   }
   .search-input:focus {
