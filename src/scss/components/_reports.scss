@@ -101,7 +101,7 @@ $reports-status: (
 
   width: 20px;
   height: 20px;
-  padding: 4px;
+  padding: fn.get-padding('sm');
 
   border-radius: 4px;
 

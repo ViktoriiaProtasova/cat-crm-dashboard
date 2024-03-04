@@ -4,3 +4,7 @@
 @function get-color($key) {
   @return map.get(var.$colors, $key);
 }
+
+@function get-padding($key) {
+  @return map.get(var.$paddings, $key);
+}

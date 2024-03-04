@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 16px 20px;
+  padding: fn.get-padding('lg') fn.get-padding('xl');
 
   &:hover,
   &:focus {

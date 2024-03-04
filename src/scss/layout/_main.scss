@@ -6,7 +6,7 @@
 .main {
   display: grid;
   gap: 40px;
-  padding: 16px;
+  padding: fn.get-padding('lg');
   grid-template-areas:
     'welcome'
     'co-workers'
@@ -34,5 +34,23 @@
       'welcome welcome'
       'co-workers tasks'
       'co-workers reports';
+  }
+}
+
+.companies-main {
+  display: grid;
+  gap: 40px;
+  padding: fn.get-padding('lg');
+  grid-template-areas:
+    'welcome'
+    'companies';
+
+  @include mx.mq('md') {
+    gap: 36px;
+    padding: 36px;
+  }
+
+  @include mx.mq('lg') {
+    grid-area: main;
   }
 }

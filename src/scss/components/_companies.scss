@@ -1,0 +1,53 @@
+@use '../utils/placeholders';
+@use '../utils/variables' as var;
+@use '../utils/functions' as fn;
+@use '../utils/mixins' as mx;
+
+.companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.board-left {
+  width: 100%;
+}
+
+.board-companies {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+
+  .board-caption {
+    margin: 0;
+  }
+
+  .board-tag {
+    fill: fn.get-color('light');
+  }
+}
+
+.board-geo-tag {
+  fill: fn.get-color('success');
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 32px;
+}
+
+.discover-caption {
+  display: inline-flex;
+  align-items: center;
+  min-width: 89px;
+  height: 36px;
+
+  padding: fn.get-padding('md') 12px;
+  color: fn.get-color('accent-primary');
+
+  border: 1px solid fn.get-color('accent-primary');
+  border-radius: 12px;
+}

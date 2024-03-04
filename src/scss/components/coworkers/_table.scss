@@ -35,7 +35,7 @@
       @extend %details-accent;
 
       position: relative;
-      padding: 12px 20px;
+      padding: 12px fn.get-padding('xl');
       border-bottom-width: 1px;
 
       color: fn.get-color('light-primary');
@@ -71,7 +71,7 @@
     td {
       position: relative;
 
-      padding: 16px 20px;
+      padding: fn.get-padding('lg') fn.get-padding('xl');
       vertical-align: middle;
       border-bottom-width: 1px;
 

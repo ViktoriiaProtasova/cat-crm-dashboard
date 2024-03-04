@@ -6,7 +6,7 @@
 .co-workers-details {
   @extend %details;
 
-  padding: 16px 0;
+  padding: fn.get-padding('lg') 0;
 
   @include mx.mq('md') {
     display: none;

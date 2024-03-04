@@ -16,6 +16,7 @@
   align-items: flex-end;
   row-gap: 16px;
 }
+
 .page-title {
   &-accent {
     @extend %section-title;
@@ -29,7 +30,4 @@
       margin-bottom: 16px;
     }
   }
-}
-
-.welcome-btn {
 }

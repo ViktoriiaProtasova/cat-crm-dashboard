@@ -42,7 +42,7 @@
   align-items: center;
   gap: 16px;
 
-  padding: 16px 8px;
+  padding: fn.get-padding('lg') fn.get-padding('md');
   border-top: 1px solid;
   border-color: fn.get-color('light-tertiary');
 }

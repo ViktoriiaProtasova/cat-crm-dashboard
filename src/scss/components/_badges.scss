@@ -8,7 +8,7 @@
     @extend %details-accent;
 
     min-width: 96px;
-    padding: 4px 8px;
+    padding: fn.get-padding('sm') fn.get-padding('md');
 
     text-align: center;
     color: fn.get-color('light-primary');
