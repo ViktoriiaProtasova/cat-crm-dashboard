@@ -70,8 +70,8 @@
 }
 
 @mixin ease($ease, $properties...) {
-  @if map.has-key(var.$easings, $ease) {
-    $ease: map.get(var.$easings, $ease);
+  @if map.has-key(var.$easing, $ease) {
+    $ease: map.get(var.$easing, $ease);
 
     transition: $ease;
   } @else {

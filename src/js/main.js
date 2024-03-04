@@ -1,5 +1,5 @@
 import '../scss/main.scss';
-
+import 'the-new-css-reset/css/reset.css';
 import * as bodyScrollLock from 'body-scroll-lock';
 
 // Sidebar menu
